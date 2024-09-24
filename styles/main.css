@@ -1,0 +1,116 @@
+main {
+    display: grid;
+    gap: 2.5rem;
+    & > section {
+        & h2 {
+            font: var(--label-md);
+            color: var(--content-primary);
+        }
+
+        & p {
+            margin-top: .125rem;
+            font: var(--paragraph-md);
+            color: var(--content-tertiary);
+        }
+    }
+
+& form {
+    & fieldset {
+        all: unset;
+        & .flex {
+        display: flex;
+        gap: .75rem; 
+    margin-bottom: 1.25rem;
+    }
+
+        & div.ipt-number {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+        }
+
+        & label {
+            text-align: center;
+            font: var(--label-sm);
+            color: var(--content-secondary);
+        }
+
+& input {
+    all: unset;
+    width: 5.5rem;
+    height: 3.5rem;
+    border-radius: .5rem;
+    background-color: var(--bg-secondary);
+    color: var(--content-primary);
+    font: var(--dp-sm);
+    text-align: center;
+}
+
+& #checkbox {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: .5rem;
+margin-bottom: 2.5rem;
+
+& label {
+    all: unset;
+    font: 400 .75rem/1.5 "Inter", sans-serif;
+    color: var(--content-primary);
+}
+
+& > div { 
+    cursor: pointer;
+position: relative;
+width: 2rem;
+height: 1.25rem;
+border-radius: 1rem;
+background-color: var(--content-tertiary);
+display: grid;
+align-items: center;
+padding-inline: .25rem;
+& #btn {
+    width: .875rem;
+    height: .875rem;
+    border-radius: 50%;
+    background-color: var(--content-primary);
+}
+
+    & input {
+        all: unset;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    &:has(:checked) {
+    background: var(--gradient-bg);
+    justify-content: end;
+        padding-right: .25rem;
+    }
+}
+}
+
+
+}
+
+& button {
+    all: unset;
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--bg-tertiary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: var(--content-primary);
+    font: var(--label-sm);
+cursor: pointer;
+}
+
+} }

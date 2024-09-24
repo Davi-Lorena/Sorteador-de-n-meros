@@ -25,6 +25,8 @@
     display=swap" rel="stylesheet">
 <!-- Roboto flex -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="container">
@@ -37,6 +39,48 @@
 
     </header>
 
+    <main class="container">
+<section>
+<h2>Quero sortear:</h2>
+<p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+</section>
+
+<form method="post" enctype="multipart/form-data">
+    <fieldset>
+        <div class="flex">
+        <div class="ipt-number">
+        <label for="draw">Números</label>
+        <input type="text" name="draw" id="draw">
+    </div>
+
+    <div
+    class="ipt-number">
+        <label for="quantity">De</label>
+        <input type="text" name="quantity" id="quantity">
+    </div>
+
+    <div class="ipt-number">
+        <label for="total">De</label>
+        <input type="text" name="total" id="total">
+    </div>
+</div>
+    <div id="checkbox">
+        <div>
+            <div id="btn">
+        <input type="checkbox" id="check" name="check">
+    </div>
+    </div>
+        <label for="check">Não repetir número</label>
+    </div>
+
+</fieldset>
+<button>
+    SORTEAR 
+    <img src="./assets/Frame-1.svg" alt="">
+</button>
+</form>
+
+    </main>
 
 
 </body>
