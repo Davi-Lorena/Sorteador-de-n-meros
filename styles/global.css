@@ -1,0 +1,41 @@
+/* Resetando */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* Criando as variáveis na raiz */
+
+:root {
+/* Variáveis de cor */
+--content-primary: #FFFFFF;
+--content-secondary: #c7c9cc;
+--content-tertiary: #d9d9d9;
+--content-brand: #d58de7;
+
+--color-inverse: #030203;
+
+--bg-primary: #020202;
+--bg-secondary: #111012;
+--bg-tertiary: #24222e;
+--bg-brand: #c58de7;
+--bg-gray: #3d3d3d;
+
+--accent-pink: #d586e0;
+--accent-blue: #91a1fa;
+--accent-green: #77c0a7;
+--accent-lime: #d1dc97;
+--accent-red: #e9a9b3;
+
+--gradient-border: linear-gradient(
+    #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%
+);
+--gradient-bg: linear-gradient(
+    #D586E0 0%, #91A1FA 98.93%
+);
+--gradient-content: linear-gradient(#C7C9CC 0%, #3D3D3D 100%);
+
+
+
+}
