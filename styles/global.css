@@ -34,13 +34,13 @@
 --gradient-bg: linear-gradient(
     #D586E0 0%, #91A1FA 98.93%
 );
---gradient-content: linear-gradient(#C7C9CC 0%, #3D3D3D 100%);
+--gradient-content: linear-gradient(90deg, #C7C9CC 0%, #3D3D3D 100%);
 
 /*Variáveis de fonte */
 
 --ff-sora: "Sora", sans-serif;
---dp-lg: 700 4.5rem/1.3 var(--ff-sora); 
---dp-md: 700 2.5rem/1.3 var(--ff-sora);
+--dp-lg: 800 4.5rem/1.3 var(--ff-sora); 
+--dp-md: 800 2.5rem/1.3 var(--ff-sora);
 --dp-sm: 600 2rem/1.3 var(--ff-sora);
 
 --uppercase: uppercase; 
@@ -55,5 +55,23 @@
 --label-md: 600 1.25rem/1.5 var(--ff-flex);
 --label-sm: 600 1rem/1.5 var(--ff-flex);
 
+/* Layout  */
+--max-width: 375px; 
+--px-margin: 2.25rem;
 
+}
+
+body {
+    background-color: var(--bg-primary);
+}
+
+/* Dando uppercase aos demais */ 
+h1, h2, h3, label {
+    text-transform: var(--uppercase);
+}
+
+/* Utility */ 
+.container {
+    max-width: min(var(--max-width), 100% - 2 * var(--px-margin));
+    margin-inline: auto;
 }

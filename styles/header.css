@@ -1,0 +1,28 @@
+header {
+    padding-block: 2.5rem;
+    display: grid;
+gap: 3rem;
+
+& img {
+    margin-inline: auto;
+}
+
+& div {
+    display: grid;
+    gap: .5rem;
+}
+
+& h3 {
+    font: var(--overline);
+    background: var(--gradient-content);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+& h1 {
+    font: var(--dp-md);
+    color: var(--content-primary);
+}
+
+}
