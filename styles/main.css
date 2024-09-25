@@ -34,9 +34,11 @@ main {
             text-align: center;
             font: var(--label-sm);
             color: var(--content-secondary);
+            
+
         }
 
-& input {
+& input[type="text"] {
     all: unset;
     width: 5.5rem;
     height: 3.5rem;
@@ -45,6 +47,7 @@ main {
     color: var(--content-primary);
     font: var(--dp-sm);
     text-align: center;
+
 }
 
 & #checkbox {
@@ -111,6 +114,9 @@ padding-inline: .25rem;
     color: var(--content-primary);
     font: var(--label-sm);
 cursor: pointer;
+
 }
 
 } }
+
+

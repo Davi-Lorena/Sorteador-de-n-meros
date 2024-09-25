@@ -28,7 +28,7 @@
 --accent-lime: #d1dc97;
 --accent-red: #e9a9b3;
 
---gradient-border: linear-gradient(
+--gradient-border: linear-gradient(90deg,
     #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%
 );
 --gradient-bg: linear-gradient(
