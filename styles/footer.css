@@ -1,0 +1,28 @@
+footer {
+    margin-block: 5rem 2.5rem;
+display: grid;
+gap: 2.25rem;
+
+& section {
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+    & div {
+        & h3 {
+            color: var(--content-brand);
+            font: var(--paragraph-md);
+            text-transform: unset;
+        }
+
+& p {
+    color: var(--content-secondary);
+    font: var(--paragraph-sm);
+}
+
+    }
+
+
+}
+
