@@ -121,8 +121,17 @@ padding-inline: .25rem;
 }
 }
 
-
 }
+
+#draw-one:hover {
+    & img {
+        animation: goBack 1s infinite ease-in-out alternate;
+    }
+}
+
+
+} }
+
 
 & button {
     all: unset;
@@ -138,7 +147,6 @@ padding-inline: .25rem;
     font: var(--label-sm);
     cursor: pointer;
     position: relative;
-   
 
 &::before {
     content: "";
@@ -156,7 +164,7 @@ visibility: hidden;
 &:hover {
     background-color: var(--bg-secondary);
     & img {
-        animation: goBack 1s infinite ease-in-out alternate;
+        animation: rotate 1.25s infinite linear;
     }
     
     &::before {
@@ -164,12 +172,10 @@ visibility: hidden;
     visibility: visible;
 }
 
-}
+} 
 
 
 }
-
-} }
 
 @keyframes animateBorder {
     0% {
@@ -244,3 +250,12 @@ visibility: hidden;
         transform: translateX(.75rem);
     }
 }
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+

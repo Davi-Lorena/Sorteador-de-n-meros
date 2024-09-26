@@ -44,7 +44,7 @@ function drawNumbers(draw) {
     
     // Criando a div que irá conter os itens do sorteio
  const space = document.createElement("div")
- space.classList.add("space")
+ space.classList.add("space", "container")
 
  // Criando o título da div 
 const result = document.createElement("h1")
@@ -60,10 +60,14 @@ subTitle.classList.add("sub-title")
 const title = document.createElement("div")
 title.append(result, subTitle)
 
+// Criando o botão 
+const button = document.createElement("button")
+button.innerHTML = `SORTEAR NOVAMENTE  <img src="./assets/Frame.svg" alt="rotate arrow">`
+
  // Adicionando a div no main e os itens na div 
 space.append(title)
 
- main.append(space)
+ main.append(space, button)
 
     } catch (error) {
         alert("Não foi possível realizar o sorteio")
