@@ -1,0 +1,23 @@
+/* Div que irá conter os elementos */
+.space {
+    max-width: var(--max-width);
+    width: 100%;
+    min-height: 18rem;
+max-height: max-content;
+padding-block: 4.5rem;
+display: grid;
+justify-content: center;
+}
+
+/* Título da div */ 
+.result {
+    font: var(--label-md);
+    color: var(--content-primary);
+}
+
+/* Sub-título */ 
+.sub-title {
+    font: var(--overline);
+    color: var(--content-secondary);
+    text-align: center;
+}
