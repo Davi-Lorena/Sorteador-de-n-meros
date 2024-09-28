@@ -4,7 +4,7 @@
     width: 100%;
     min-height: 18rem;
 max-height: max-content;
-padding-block: 4.5rem;
+padding-block: 4.5rem 2.5rem;
 display: grid;
 justify-content: center;
 }
@@ -20,4 +20,19 @@ justify-content: center;
     font: var(--overline);
     color: var(--content-secondary);
     text-align: center;
+}
+
+/* Div pai dos números sorteados */ 
+.div-sorted-numbers {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+/* div que irá conter cada número sorteado */
+.number-sorted {
+    color: var(--content-brand);
+    font: var(--number-mono);
 }

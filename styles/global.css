@@ -47,6 +47,7 @@
 
 --ff-mono: "Roboto Mono", monospace;
 --overline: 600 1rem/1.5 var(--ff-mono);
+--number-mono: 600 3rem/1.5 var(--ff-mono);
 
 --ff-flex: "Roboto Flex", sans-serif;
 --paragraph-lg: 500 1rem/1.5 var(--ff-flex);
