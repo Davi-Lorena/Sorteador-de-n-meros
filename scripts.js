@@ -111,8 +111,13 @@ const copySpaceSample = [...spaceSample] // Cópia para não modificar o array o
 // Sorteando números únicos 
 while (sortedNumbers.length < amount) {
     const random = Math.floor(Math.random()* copySpaceSample.length)
-    const selectedNumber =  copySpaceSample.splice(random, 1)[0]
+    const selectedNumber =  copySpaceSample[random]
     sortedNumbers.push(selectedNumber)
+
+if (checkbox.checked) {
+    copySpaceSample.splice(random, 1)
+}
+
 }
 
 return sortedNumbers
