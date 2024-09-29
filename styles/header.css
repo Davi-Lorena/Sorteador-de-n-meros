@@ -23,6 +23,7 @@ gap: 3rem;
 & h1 {
     font: var(--dp-md);
     color: var(--content-primary);
+    max-width: 20rem;
 }
 
 }

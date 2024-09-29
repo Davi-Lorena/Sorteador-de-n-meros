@@ -79,6 +79,15 @@ title.append(result, subTitle)
 const button = document.createElement("button")
 button.innerHTML = `SORTEAR NOVAMENTE  <img src="./assets/Frame.svg" alt="rotate arrow">`
 
+button.onclick = () => {
+main.innerHTML = ""
+
+drawStructure(draw, spaceSample)
+
+
+}
+
+
 // Criando a const que realizará o sorteio 
 const sortedNumbers = drawNumbers(draw.amount, spaceSample)
 
@@ -110,8 +119,8 @@ const copySpaceSample = [...spaceSample] // Cópia para não modificar o array o
 
 // Sorteando números únicos 
 while (sortedNumbers.length < amount) {
-    const random = Math.floor(Math.random()* copySpaceSample.length)
-    const selectedNumber =  copySpaceSample[random]
+    const random = Math.floor(Math.random() * copySpaceSample.length)
+    const selectedNumber = copySpaceSample[random]
     sortedNumbers.push(selectedNumber)
 
 if (checkbox.checked) {
