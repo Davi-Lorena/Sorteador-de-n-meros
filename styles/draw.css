@@ -28,12 +28,138 @@ justify-content: center;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+   align-content: center;
     margin-top: 2.5rem;
 }
 
 /* div que irá conter cada número sorteado */
 .number-sorted {
-    color: var(--content-brand);
     font: var(--number-mono);
+    color: var(--content-brand);
+    animation:
+    noRotation 700ms ease 700ms, 
+    scale 500ms forwards ease,
+     diminuteScale 500ms ease 2s forwards, colorInverse 100ms linear 900ms forwards, colorReturn 100ms linear 2s forwards;
 }
+/* animção que o número terá ao aparecer */ 
+
+.animation-number {
+   display: grid;
+   align-items: center;
+   justify-content: center;
+  align-content: center;
+    background-color: var(--content-brand);
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 1.75rem;
+     animation:
+    scale 500ms forwards ease,
+    rotation 700ms ease 700ms, 
+    backTransparent 500ms ease 2s forwards, diminuteScale 500ms ease 2s forwards;
+}
+
+
+@keyframes colorInverse {
+    100% {
+        color: var(--color-inverse);
+}
+}
+
+@keyframes colorReturn {
+    100% {
+        color: var(--content-brand);
+    }
+}
+
+@keyframes scale {
+    0% {
+        scale: 0;
+    }
+    100% {
+        scale: 1.05;
+    }
+}
+
+@keyframes rotation {
+    10% {
+        transform: rotate(18deg);
+    }
+    20% {
+        transform: rotate(36deg);
+    }
+    30% {
+        transform: rotate(54deg);
+    }
+    40% {
+        transform: rotate(72deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    60% {
+        transform: rotate(108deg);
+    }
+    70% {
+        transform: rotate(126deg);
+    }
+    80% {
+        transform: rotate(144deg);
+    }
+    90% {
+        transform: rotate(162deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes noRotation {
+    10% {
+      transform: rotate(-18deg);
+    }
+    20% {
+      transform: rotate(-36deg);
+    }
+    30% {
+      transform: rotate(-54deg);
+    }
+    40% {
+      transform: rotate(-72deg);
+    }
+    50% {
+      transform: rotate(-90deg);
+    }
+    60% {
+      transform: rotate(-108deg);
+    }
+    70% {
+      transform: rotate(-126deg);
+    }
+    80% {
+      transform: rotate(-144deg);
+    }
+    90% {
+      transform: rotate(-162deg);
+    }
+    100% {
+      transform: rotate(-180deg);
+    }
+  }
+
+@keyframes backTransparent {
+    to {
+        background-color: transparent;
+    }
+}
+
+@keyframes diminuteScale {
+    to {
+        scale: 1;
+    }
+}
+
+
+
+

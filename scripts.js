@@ -83,28 +83,38 @@ button.onclick = () => {
 main.innerHTML = ""
 
 drawStructure(draw, spaceSample)
-
-
 }
-
-
-// Criando a const que realizará o sorteio 
-const sortedNumbers = drawNumbers(draw.amount, spaceSample)
 
 // Criando as divs para exibir os números 
 const divSortedNumbers = document.createElement("div")
 divSortedNumbers.classList.add("div-sorted-numbers")
 
-sortedNumbers.forEach(num => {
-    const numberSorted = document.createElement("div")
-numberSorted.classList.add("number-sorted")
-    numberSorted.textContent = num
-    divSortedNumbers.append(numberSorted)
-})
-
  // Adicionando a div no main e os itens na div 
 space.append(title, divSortedNumbers)
  main.append(space, button)
+
+ // Criando a const que realizará o sorteio 
+const sortedNumbers = drawNumbers(draw.amount, spaceSample)
+let i = 0 
+
+function showNumbers() {
+    if(i < sortedNumbers.length) {
+        const numberSorted = document.createElement("span")
+        numberSorted.classList.add("number-sorted")
+        numberSorted.textContent = sortedNumbers[i]
+    const animationDiv = document.createElement("div")
+    animationDiv.classList.add("animation-number")
+    animationDiv.append(numberSorted)
+        divSortedNumbers.append(animationDiv)
+        i++ 
+
+        setTimeout(showNumbers, 3500)
+    }
+}
+
+// Executa a função que exibe os números 
+setTimeout(showNumbers, 500)
+
 
     } catch (error) {
         alert("Não foi possível realizar o sorteio")
