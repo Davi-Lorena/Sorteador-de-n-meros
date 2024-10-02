@@ -43,7 +43,7 @@ justify-content: center;
     scale 500ms forwards ease,
      diminuteScale 500ms ease 2s forwards, colorInverse 100ms linear 900ms forwards, colorReturn 100ms linear 2s forwards;
 }
-/* animção que o número terá ao aparecer */ 
+/* animação que o número terá ao aparecer */ 
 
 .animation-number {
    display: grid;
@@ -60,6 +60,11 @@ justify-content: center;
     backTransparent 500ms ease 2s forwards, diminuteScale 500ms ease 2s forwards;
 }
 
+/* Transição para aparecer o botão */
+.appear-button {
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
 
 @keyframes colorInverse {
     100% {
@@ -159,7 +164,5 @@ justify-content: center;
         scale: 1;
     }
 }
-
-
 
 

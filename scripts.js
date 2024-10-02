@@ -75,23 +75,13 @@ subTitle.classList.add("sub-title")
 const title = document.createElement("div")
 title.append(result, subTitle)
 
-// Criando o botão 
-const button = document.createElement("button")
-button.innerHTML = `SORTEAR NOVAMENTE  <img src="./assets/Frame.svg" alt="rotate arrow">`
-
-button.onclick = () => {
-main.innerHTML = ""
-
-drawStructure(draw, spaceSample)
-}
-
 // Criando as divs para exibir os números 
 const divSortedNumbers = document.createElement("div")
 divSortedNumbers.classList.add("div-sorted-numbers")
 
  // Adicionando a div no main e os itens na div 
 space.append(title, divSortedNumbers)
- main.append(space, button)
+ main.append(space)
 
  // Criando a const que realizará o sorteio 
 const sortedNumbers = drawNumbers(draw.amount, spaceSample)
@@ -109,8 +99,30 @@ function showNumbers() {
         i++ 
 
         setTimeout(showNumbers, 3500)
+    } else {
+        const button = document.createElement("button")
+        button.classList.add("appear-button")
+        button.innerHTML = `SORTEAR NOVAMENTE  <img src="./assets/Frame.svg" alt="rotate arrow">`
+
+        // Um pequeno atraso antes de mudar a opacidade para 1
+setTimeout(() => {
+    button.style.opacity = 1; // Transição de opacidade
+}, 50); // Atraso pequeno para permitir que o botão seja renderizado antes de mudar a opacidade
+
+        
+        button.onclick = () => {
+        main.innerHTML = ""
+        
+        drawStructure(draw, spaceSample)
+        }
+        
+        main.append(button)
+        
     }
 }
+
+
+  
 
 // Executa a função que exibe os números 
 setTimeout(showNumbers, 500)
@@ -122,6 +134,10 @@ setTimeout(showNumbers, 500)
     }
     
 }
+
+
+
+
 
 function drawNumbers(amount, spaceSample) {
 const sortedNumbers = []
