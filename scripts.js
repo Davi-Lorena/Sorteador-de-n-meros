@@ -53,9 +53,9 @@ drawStructure(draw, spaceSample)
 function drawStructure(draw, spaceSample) {
 
     try {
-    //Removendo parte do main para executar o código 
-    section.classList.add("remove")
-    form.classList.add("remove")
+    //Removendo o conteúdo do main para executar o código 
+    main.classList.remove("grid")
+   main.innerHTML = ""
     
     // Criando a div que irá conter os itens do sorteio
  const space = document.createElement("div")

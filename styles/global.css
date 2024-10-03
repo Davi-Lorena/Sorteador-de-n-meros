@@ -66,6 +66,7 @@ body {
     background-color: var(--bg-primary);
     position: relative;
     overflow-x: hidden;
+    justify-content: center;
 }
 
 #bg-shape{ 
@@ -90,6 +91,40 @@ h1, h2, h3, label {
     margin-inline: auto;
 }
 
-.remove {
+.grid {
+    display: grid;
+}
+
+.desktop-only {
     display: none;
+}
+
+@media (width >= 1200px) {
+:root {
+    --max-width: 1280px; 
+    --px-margin: 6rem;
+}
+
+.desktop-only {
+    display: block;
+}
+
+body {
+    gap: 5.75rem;
+
+
+& #layout {
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 10rem;
+}
+
+}
+
+#bg-shape {
+    left: -50%;
+    bottom: 0;
+    width: 200%;
+}
+
 }

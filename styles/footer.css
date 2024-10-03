@@ -1,6 +1,5 @@
-footer {
+footer, #informations {
     margin-block: 5rem 2.5rem;
-display: grid;
 gap: 2.25rem;
 
 & section {
@@ -26,3 +25,23 @@ gap: 2.25rem;
 
 }
 
+footer { /* Grid colocado fora do utility para retirá-lo de telas maiores */
+    display: grid;
+}
+
+@media (width >= 1200px) {
+ footer {
+    display: none;
+ }
+
+#informations {
+    margin-block: 0;
+    justify-content: center;
+    text-wrap: wrap;
+    max-width: 24.125rem;
+   & section + section {
+    margin-top: 2.25rem;
+   }
+}
+
+}

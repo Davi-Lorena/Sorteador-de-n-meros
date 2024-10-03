@@ -1,14 +1,16 @@
-header {
-    padding-block: 2.5rem;
-    display: grid;
-gap: 3rem;
-
-& img {
+img[src*="logo"] {
+object-fit: cover;
+    display: block;
     margin-inline: auto;
+    margin-top: 2.75rem;
 }
 
-& div {
-    display: grid;
+header {
+    padding-block: 2.5rem;
+gap: 3rem;
+
+
+& div:nth-child(1) {
     gap: .5rem;
 }
 
@@ -26,4 +28,23 @@ gap: 3rem;
     max-width: 20rem;
 }
 
+}
+
+@media (width >= 1200px) {
+    img[src*="logo"] {
+margin-inline: 0 auto;
+        margin-top: 5rem;
+    }
+
+
+    header {
+        max-width: 32rem;
+padding-block: 0;
+gap: 2rem;
+        & h1 {
+            font: var(--dp-lg);
+        max-width: 100%;
+        }
+
+    }
 }

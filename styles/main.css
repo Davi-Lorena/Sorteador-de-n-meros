@@ -1,5 +1,4 @@
 main {
-    display: grid;
     gap: 2.5rem;
     & > section {
         & h2 {
@@ -258,3 +257,9 @@ visibility: hidden;
     }
 }
 
+@media (width >= 1200px) {
+    main {
+        max-width: 26rem;
+        max-height: 21.5rem;
+    }
+}

@@ -21,18 +21,37 @@
 <!-- Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="container">
-        <img src="./assets/logo.svg" alt="Logo">
-
-        <div>
+<body class="container grid">
+    <img src="./assets/logo.svg" alt="Logo">
+    <div id="layout">
+    <header class="grid">
+        <div class="grid">
             <h3>Online - gratuito</h3>
             <h1>Sorteador de números</h1>
         </div>
 
+        <div id="informations" class="desktop-only">
+            <section>
+                <img src="./assets/Frame-2.svg" alt="">
+    <div>
+                <h3>Como funciona o sorteador de números?</h3>
+                <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+            </div>
+            </section>
+    
+            <section>
+                <img src="./assets/Frame-2.svg" alt="">
+                <div>
+                <h3>Posso escolher o intervalo dos números?</h3>
+                <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+            </div>
+            </section>
+    
+        </div>
+        
     </header>
 
-    <main class="container">
+    <main class="grid">
 <section>
 <h2>Quero sortear:</h2>
 <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
@@ -81,7 +100,7 @@
 
     </main>
 
-    <footer class="container">
+    <footer class="">
         <section>
             <img src="./assets/Frame-2.svg" alt="">
 <div>
@@ -99,6 +118,7 @@
         </section>
 
     </footer>
+</div>
 <div id="bg-shape">
 </div>
 <script src="./scripts.js"></script>
