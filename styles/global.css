@@ -99,32 +99,47 @@ h1, h2, h3, label {
     display: none;
 }
 
-@media (width >= 1200px) {
+@media (950px <= width) {
 :root {
-    --max-width: 1280px; 
-    --px-margin: 6rem;
+    --max-width: 80%;
+    --px-margin: 4rem;
 }
+
 
 .desktop-only {
     display: block;
 }
 
-body {
-    gap: 5.75rem;
-
-
-& #layout {
+#layout {
     display: flex;
-    gap: 6rem;
-    margin-bottom: 10rem;
-}
-
+    gap: 4rem;
+    margin-bottom: 6rem;
 }
 
 #bg-shape {
     left: -50%;
     bottom: 0;
     width: 200%;
+}
+    
+}
+
+
+@media (width >= 1200px) {
+:root {
+    --max-width: 1280px; 
+    --px-margin: 6rem;
+}
+
+
+body {
+    gap: 5.75rem;
+
+& #layout {
+    gap: 6rem;
+    margin-bottom: 10rem;
+}
+
 }
 
 }

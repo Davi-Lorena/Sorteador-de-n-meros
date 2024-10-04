@@ -257,6 +257,13 @@ visibility: hidden;
     }
 }
 
+
+@media (950px <= width < 1200px) {
+main {
+    max-width: 22rem;
+}    
+    }
+
 @media (width >= 1200px) {
     main {
         max-width: 26rem;

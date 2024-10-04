@@ -29,19 +29,27 @@ footer { /* Grid colocado fora do utility para retirá-lo de telas maiores */
     display: grid;
 }
 
-@media (width >= 1200px) {
- footer {
+@media (950px <= width) {
+footer {
     display: none;
- }
-
+}
+    
 #informations {
     margin-block: 0;
-    justify-content: center;
-    text-wrap: wrap;
+    max-width: 20rem;
+
+    & section + section {
+        margin-top: 2.25rem;
+       }
+
+}
+
+}
+
+
+@media (width >= 1200px) {
+#informations {
     max-width: 24.125rem;
-   & section + section {
-    margin-top: 2.25rem;
-   }
 }
 
 }

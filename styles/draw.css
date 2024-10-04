@@ -25,6 +25,7 @@ justify-content: center;
 
 /* Div pai dos números sorteados */ 
 .div-sorted-numbers {
+    max-width: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -165,6 +166,19 @@ justify-content: center;
     }
 }
 
+@keyframes moveNumber {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+@media (950px <= width < 1200px) {
+    .space {
+        width: 22rem;
+        padding-block: 0 2rem;
+    }    
+}    
 
 @media (width >= 1200px) {
     .space {

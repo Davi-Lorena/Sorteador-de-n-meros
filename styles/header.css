@@ -30,20 +30,39 @@ gap: 3rem;
 
 }
 
+
+@media (950px <= width) {
+    img[src*="logo"] {
+        margin-inline: 0 auto;
+                margin-block: 3rem;
+            }
+        
+header {
+    padding-block: 0;
+    gap: 2rem;
+    max-width: 26rem;
+    max-height: 22rem;
+
+    & h1 {
+font-size: 3.25rem;
+max-width: 100%;
+    }
+}
+
+
+}
+
 @media (width >= 1200px) {
     img[src*="logo"] {
-margin-inline: 0 auto;
-        margin-top: 5rem;
+        margin-block: 5rem 0;
     }
 
 
     header {
-        max-width: 32rem;
-padding-block: 0;
-gap: 2rem;
+        max-width: 34rem;
+
         & h1 {
             font: var(--dp-lg);
-        max-width: 100%;
         }
 
     }
