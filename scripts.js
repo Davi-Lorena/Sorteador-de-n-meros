@@ -36,8 +36,13 @@ if (draw.amount > (draw.initialSample + draw.finalSample + 1)) {
     alert("O valor de números a serem selecionados é maior que o espaço amostral")
     return
 } 
-    
 
+
+if (draw.initialSample > draw.finalSample) {
+    alert("Space amostral não correspondente")
+    return
+}
+    
 
 var spaceSample = []
 
@@ -52,6 +57,7 @@ drawStructure(draw, spaceSample)
 let execute = 0 
 
 function drawStructure(draw, spaceSample) {
+
     try {
     //Removendo o conteúdo do main para executar o código 
     main.classList.remove("grid")
