@@ -32,13 +32,12 @@ finalSample: parseInt(finalValue.value),
 } // O parceInt transforma strings em números inteiros 
 
 // Condição de existência do sorteio, garantindo que não haverão mais números a serem sorteados do que a quantidade disponível no espaço amostral
-if (draw.amount > (draw.initialSample + draw.finalSample + 1)) {
-    alert("O valor de números a serem selecionados é maior que o espaço amostral")
+if (draw.amount > (draw.finalSample - draw.initialSample)) {
+    alert("O valor de números a serem sorteados é maior que o espaço amostral")
     return
 } 
-
-
-if (draw.initialSample > draw.finalSample) {
+// Condição que garante que o espaço amostral exista 
+if (draw.initialSample >= draw.finalSample) {
     alert("Space amostral não correspondente")
     return
 }
