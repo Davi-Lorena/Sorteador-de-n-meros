@@ -49,9 +49,9 @@ drawStructure(draw, spaceSample)
 
 }
 
+let execute = 0 
 
 function drawStructure(draw, spaceSample) {
-
     try {
     //Removendo o conteúdo do main para executar o código 
     main.classList.remove("grid")
@@ -68,7 +68,8 @@ result.classList.add("result")
 
 // Criando o sub-título 
 const subTitle = document.createElement("h2")
-subTitle.textContent = `1º resultado`
+execute++ // Aqui faz com que seja apresentado o número de resultados 
+subTitle.textContent = `${execute}º resultado` 
 subTitle.classList.add("sub-title")
 
 // Criando uma caixa para unir os dois acima 
@@ -112,7 +113,6 @@ setTimeout(() => {
         
         button.onclick = () => {
         main.innerHTML = ""
-        
         drawStructure(draw, spaceSample)
         }
         
@@ -120,7 +120,6 @@ setTimeout(() => {
         
     }
 }
-
 
   
 
