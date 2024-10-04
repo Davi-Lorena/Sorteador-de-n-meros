@@ -45,12 +45,22 @@ justify-content: center;
         
         &:hover { 
             background: var(--gradient-border);
+
+& input {
+    background-color: var(--bg-tertiary);
+}
+
+
         } 
     
 &:focus-within {
     width: 5.75rem;
     height: 3.75rem;
     background: var(--gradient-border);
+
+    & input {
+        background-color: var(--bg-tertiary);
+    }
 }
 
     }
@@ -64,6 +74,7 @@ justify-content: center;
     color: var(--content-primary);
     font: var(--dp-sm);
     text-align: center;
+    transition: background-color 500ms ease;
 
 }
 
