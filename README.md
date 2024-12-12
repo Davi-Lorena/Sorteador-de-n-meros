@@ -12,7 +12,7 @@ Esse projeto sorteia a quantidade de números desejada pelo usuário dentro de u
 
 ## :rocket: Sobre o desenvolvimento
 Ao desenvolver esse projeto, consolidei aprendizados recentes sobre JavaScript e pude retomar conceitos já estudados sobre HTML e CSS, que foram fundamentais na construção da estrutura, estilização e animação dele. Enfrentei vários desafios nesse processo, como:
-- Buscar estruturar o HTML semânticamente
+- Buscar estruturar o HTML semanticamente
 - Desenvolver um layout que favorecesse a aplicação de responsividade
 - Criar animações mais complexas por meio do CSS
 - Elaborar funções e condições para que o sorteio fosse realizado
